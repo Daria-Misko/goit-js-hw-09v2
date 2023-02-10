@@ -10,7 +10,7 @@ function getRandomHexColor() {
 }
 
 function colorBgChange() {
-	timerId = setInterval(() => {
+	const timerId = setInterval(() => {
 		return document.body.style.backgroundColor = getRandomHexColor();
 	}, 1000);
 	buttonStart.disabled = true;

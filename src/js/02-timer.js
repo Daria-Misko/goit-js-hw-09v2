@@ -35,7 +35,7 @@ function findDate() {
 	const date2 = new Date(input.value).getTime();
 	const date1 = new Date().getTime();
 	let dateNum = date2 - date1;
-	console.log(dateNum);
+	
 	let timerId = setInterval(() => {
 		if (dateNum < 1000) {
 			clearInterval(timerId);
