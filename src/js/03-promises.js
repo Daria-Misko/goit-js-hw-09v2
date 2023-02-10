@@ -14,6 +14,7 @@ function onSubmit(e) {
 	const step = Number(delayStep.value)
 	const amount = Number(amountInput.value)
 
+	let i = 0;
 	for (i = 1; i <= amount; i += 1){
 		let position = i;
 		
