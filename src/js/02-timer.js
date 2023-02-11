@@ -39,7 +39,10 @@ function findDate() {
 	let timerId = setInterval(() => {
 		if (dateNum < 1000) {
 			clearInterval(timerId);
+			buttonStart.disabled = false;
 		} else {
+			buttonStart.disabled = true;
+
 			dateNum = dateNum - 1000;
 			let date = convertMs(dateNum);
 			// перетворюємо в масив дати 
